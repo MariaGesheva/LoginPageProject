@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="599.0" style="-fx-background-color: #13233b;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Login">
+   <left>
+      <ImageView fitHeight="138.0" fitWidth="239.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../img/monzoLogo.png" />
+         </image>
+      </ImageView>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="358.0" style="-fx-background-color: #0A122A;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="46.0" layoutY="108.0" text="Username" textFill="#f49999">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="158.0" text="Password" textFill="#eca7a7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" layoutX="48.0" layoutY="285.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="31.0" prefWidth="262.0" style="-fx-background-color: #f49999;" text="Login" textFill="#f7f1f1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="password" layoutX="162.0" layoutY="158.0" promptText="Password" />
+            <TextField fx:id="username" layoutX="162.0" layoutY="108.0" promptText="Username">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <Text fill="#f2e9e9" layoutX="31.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login into your Monzo Account" wrappingWidth="314.2919921875">
+               <font>
+                  <Font name="Book Antiqua Bold" size="21.0" />
+               </font>
+            </Text>
+            <Button fx:id="cancelButton" layoutX="49.0" layoutY="332.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="23.0" prefWidth="261.0" style="-fx-background-color: #f49999;" text="Cancel" textFill="#f7f1f1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
